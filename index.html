@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简历 | Personal Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ===== Introduction Section ===== -->
+      <header class="intro">
+        <h1>个人简历</h1>
+
+        <!-- Optional photo: displayed only if photo.jpg exists -->
+        <img src="photo.jpg" alt="个人照片" class="photo" onerror="this.style.display = 'none'" />
+
+        <p class="intro-text" id="introText">
+          你好，我是林樱。<br />
+          我是24计算机的学生。
+        </p>
+
+        <!-- Sound icon: reads the Chinese sentences aloud -->
+        <button class="sound-btn" onclick="speakIntro()" aria-label="朗读自我介绍" title="点击朗读">🔊</button>
+      </header>
+
+      <!-- ===== Information Form ===== -->
+      <section class="form-section">
+        <h2>基本信息</h2>
+
+        <form id="resumeForm" onsubmit="return handleSubmit(event);">
+          <div class="form-group">
+            <label for="name">姓名 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="请输入姓名" />
+          </div>
+
+          <div class="form-group">
+            <label for="class">班级 <span class="required">*</span></label>
+            <input type="text" id="class" name="class" required placeholder="请输入班级" />
+          </div>
+
+          <div class="form-group">
+            <label for="studentId">学号 <span class="required">*</span></label>
+            <input type="text" id="studentId" name="studentId" required placeholder="请输入学号" />
+          </div>
+
+          <div class="form-group">
+            <label for="school">学校 / 院系</label>
+            <input type="text" id="school" name="school" placeholder="请输入学校或院系" />
+          </div>
+
+          <div class="form-group">
+            <label for="country">国家 / 地区</label>
+            <input type="text" id="country" name="country" placeholder="请输入国家或地区" />
+          </div>
+
+          <div class="form-group">
+            <label for="languages">语言</label>
+            <input type="text" id="languages" name="languages" placeholder="例如：中文、英语" />
+          </div>
+
+          <div class="form-group">
+            <label for="hobbies">兴趣爱好</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="例如：阅读、编程、运动" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="about">关于我</label>
+            <textarea id="about" name="about" rows="3" placeholder="写一句简短的自我介绍"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit" class="submit-btn">提交</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
