@@ -22,8 +22,8 @@ The webpage fulfills the following objectives:
 
 ### 1. Introduction Section
 - Two Chinese sentences:
-  - “你好，我是 [Your Name]。”
-  - “我是 [Your Class] 的学生。”
+  - “你好，我是林樱。”
+  - “我是24计算机的学生。”
 - A **sound icon (🔊)** that reads the sentences aloud in Chinese using the **Web Speech API**.
 - Optional circular photo (`photo.jpg`) with an orange border.
 
