@@ -56,5 +56,5 @@ The webpage fulfills the following objectives:
 - Responsive design with a media query for mobile screens (`max-width: 600px`).
 
 ### 5. Online Publishing
-- Hosted on **Gitee Pages** with a public URL.
+- Hosted on **GitHub Pages** with a public URL.
 - Deployment from the `master` branch.
